@@ -1,6 +1,7 @@
 # Miscellaneous
 *.class
 *.log
+.fvm/flutter_sdk
 *.pyc
 *.swp
 .DS_Store

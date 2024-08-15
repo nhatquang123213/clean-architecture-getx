@@ -1,6 +1,7 @@
 **/dgph
 *.mode1v3
 *.mode2v3
+.fvm/flutter_sdk
 *.moved-aside
 *.pbxuser
 *.perspectivev3
