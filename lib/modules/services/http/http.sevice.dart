@@ -27,7 +27,7 @@ class HttpService {
 
   Dio getDio({bool isAnonymous = false}) {
     if (isAnonymous) {
-      _anonymousDio.interceptors..clear();
+      _anonymousDio.interceptors.clear();
       return _anonymousDio;
     }
     _dio.interceptors

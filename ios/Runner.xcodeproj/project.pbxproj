@@ -374,6 +374,7 @@
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
 				ENABLE_BITCODE = NO;
 				FLUTTER_ROOT = "$(FLUTTER_APPLICATION_PATH)/.fvm/flutter_sdk";
+				FLUTTER_TARGET = lib/main_dev.dart;
 				INFOPLIST_FILE = Runner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -449,6 +450,7 @@
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
 				ENABLE_BITCODE = NO;
 				FLUTTER_ROOT = "$(FLUTTER_APPLICATION_PATH)/.fvm/flutter_sdk";
+				FLUTTER_TARGET = lib/main_dev.dart;
 				INFOPLIST_FILE = Runner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -521,6 +523,7 @@
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
 				ENABLE_BITCODE = NO;
 				FLUTTER_ROOT = "$(FLUTTER_APPLICATION_PATH)/.fvm/flutter_sdk";
+				FLUTTER_TARGET = lib/main_dev.dart;
 				INFOPLIST_FILE = Runner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -593,6 +596,7 @@
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
 				ENABLE_BITCODE = NO;
 				FLUTTER_ROOT = "$(FLUTTER_APPLICATION_PATH)/.fvm/flutter_sdk";
+				FLUTTER_TARGET = lib/main_prod.dart;
 				INFOPLIST_FILE = Runner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -722,6 +726,7 @@
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
 				ENABLE_BITCODE = NO;
 				FLUTTER_ROOT = "$(FLUTTER_APPLICATION_PATH)/.fvm/flutter_sdk";
+				FLUTTER_TARGET = lib/main_prod.dart;
 				INFOPLIST_FILE = Runner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -745,6 +750,7 @@
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
 				ENABLE_BITCODE = NO;
 				FLUTTER_ROOT = "$(FLUTTER_APPLICATION_PATH)/.fvm/flutter_sdk";
+				FLUTTER_TARGET = lib/main_prod.dart;
 				INFOPLIST_FILE = Runner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
