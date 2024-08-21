@@ -1,4 +1,4 @@
-import 'package:code_base/modules/services/http/token_interceptor.dart';
+import 'package:code_base/services/http/token_interceptor.dart';
 import 'package:dio/dio.dart';
 
 class HttpService {

@@ -1,6 +1,6 @@
 import 'package:code_base/common/configs/usecase.dart';
 import 'package:code_base/modules/auth/domain/entities/auth.entity.dart';
-import 'package:code_base/modules/services/http/http.sevice.dart';
+import 'package:code_base/services/http/http.sevice.dart';
 import 'package:dartz/dartz.dart';
 import 'package:injectable/injectable.dart';
 
