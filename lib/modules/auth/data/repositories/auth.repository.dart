@@ -14,11 +14,16 @@ class AuthRepository implements IAuthRepository {
   @override
   Future<Either<Failure, UserLoginResponseEntity>> loginUser(
       UserLoginParam param) async {
-    return await userDataSource.loginUser(param);
+    ///convert model to entity
+    return await userDataSource
+        .loginUser(param)
+        .then((value) => value.map((r) => r.toEntity()));
   }
 
   @override
   Future<Either<Failure, UserEntity>> getProfile() async {
-    return await userDataSource.getProfile();
+    return await userDataSource
+        .getProfile()
+        .then((value) => value.map((r) => r.toEntity()));
   }
 }

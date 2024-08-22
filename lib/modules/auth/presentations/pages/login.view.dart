@@ -9,19 +9,60 @@ class LoginView extends GetView<AuthController> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        body: Obx(
-          () => Center(
+        body: Center(
+          child: Form(
+            key: controller.formKey,
             child: Column(
-              children: [
-                Text("Something...${controller.counter}"),
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: <Widget>[
+                SizedBox(height: Get.height * 0.2),
+                TextFormField(
+                  decoration: const InputDecoration(labelText: 'Email'),
+                  controller: controller.emailEditingController,
+                  keyboardType: TextInputType.emailAddress,
+                  autovalidateMode: AutovalidateMode.onUserInteraction,
+                  validator: (value) {
+                    if (value!.isEmpty) {
+                      return 'Please enter your email';
+                    }
+                    if (!RegExp(r'^[^@]+@[^@]+\.[^@]+').hasMatch(value)) {
+                      return 'Please enter a valid email';
+                    }
+                    return null;
+                  },
+                ),
+                TextFormField(
+                  decoration: const InputDecoration(labelText: 'Password'),
+                  obscureText: true,
+                  autovalidateMode: AutovalidateMode.onUserInteraction,
+                  validator: (value) {
+                    if (value!.isEmpty) {
+                      return 'Please enter your password';
+                    }
+                    if (value.length < 6) {
+                      return 'Password must be at least 6 characters';
+                    }
+                    return null;
+                  },
+                  controller: controller.passwordEditingController,
+                ),
+                const SizedBox(height: 20.0),
                 ElevatedButton(
-                    onPressed: () => controller.increaseCounter(),
-                    child: Text("+1"))
+                  onPressed: _submitForm,
+                  child: const Text('Login'),
+                ),
               ],
             ),
           ),
         ),
       ),
     );
+  }
+
+  void _submitForm() {
+    if (controller.formKey.currentState!.validate()) {
+      controller.formKey.currentState!.save();
+      controller.login();
+    }
   }
 }
