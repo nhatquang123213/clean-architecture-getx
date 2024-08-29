@@ -7,6 +7,8 @@ base Flutter
 - setup https service, token_interceptor
 - thiết lập Cấu trúc thư mục dự án theo các layer domain,presentation,data
 - setup injectable,  injectable_generator, json_serialization, -> build runner generate các file json và di.config
+- tạo usecase, repository, data source -> DI bằng get_it
+- sử dụng usecase ở tầng presentation
 
 
 
