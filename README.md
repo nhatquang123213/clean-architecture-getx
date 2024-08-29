@@ -1,6 +1,14 @@
 # code_base
 
 base Flutter
+- setup fvm
+- add injectable,dartz,get_it,dio,get, get_storage
+- setup flavor
+- setup https service, token_interceptor
+- thiết lập Cấu trúc thư mục dự án theo các layer domain,presentation,data
+- setup injectable,  injectable_generator, json_serialization, -> build runner generate các file json và di.config
+
+
 
 ## Getting Started
 
